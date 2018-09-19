@@ -10,7 +10,7 @@
 
 // Tablets & Small Laptops
 @include mediaMd{
-   main{
+   main {
        align-items: center;
        text-align: center;
        
@@ -43,8 +43,17 @@
            background: url("../img/me.jpg");
            background-size:contain;
            width: 150px;
-           height: 150px;
+           height: 150px; 
        }
+   }
+   .about-info {
+       grid-template-areas:
+       "bioimage"
+       "bio"
+       "job1"
+       "job2"
+       "job3";
+       grid-template-columns: 1fr;
    }
 }
 
